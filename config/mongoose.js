@@ -1,11 +1,12 @@
 /** ------------------ IMPORTING PACKAGE ------------------ **/
+const dotenv = require('dotenv');
+dotenv.config();
 const mongoose = require("mongoose");
-
-
+const pwd = encodeURIComponent("sachinsb");
 /** ------------------ MAKING CONNECTION ------------------ **/
 
 // mongoose.connect('mongodb://127.0.0.1:27017/csvUploads');
-const DB = 'mongodb+srv://sachinsb08:sachinsb@csv-upload.vgvkepd.mongodb.net/?retryWrites=true&w=majority';
+const DB = `mongodb+srv://sachinsb08:${pwd}@csv-upload.y2ehpik.mongodb.net/?retryWrites=true&w=majority`;
 
 mongoose.connect(DB).then(()=>{
     console.log('Connection successful!');

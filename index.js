@@ -1,4 +1,5 @@
 /** ------------------ IMPORTING PACKAGE ------------------ **/
+const dotenv = require('dotenv').config();
 const express = require('express');
 const port = 8000;
 const app = express();
@@ -14,7 +15,7 @@ app.use(expressLayouts);
 
 // middleware for body-parser
 app.use(bodyParser.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
 
 //accesing static files from assets folder
 app.use(express.static('./assets'));    
