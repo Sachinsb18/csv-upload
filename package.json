@@ -1,9 +1,10 @@
 {
   "name": "csv-upload",
   "version": "1.0.0",
-  "description": "",
+  "description": "To read csv file data easily and handle it properly",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sachin sb",
