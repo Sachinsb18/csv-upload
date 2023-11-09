@@ -27,23 +27,29 @@ POST /upload: Uploads a CSV file and parses the data.
 GET /data: Returns the parsed CSV data as JSON.
 Folder Structure
 CSV_Upload/
-|── |assets/
-│   |      ├── css/
-│   │      |     ├── styles.css
+|---|assets/
+│   |      |---css/
+│   │      |     |-- file_viewer.css
+|   |      |     |-- header.css
+|   |      |     |-- home.css
 │   |      ├── js/
-│   |            ├── script.js
-│   ├── uploads/
-│   ├── index.html
-|   |
-├── routes/
-│   ├── csvRoutes.js
-|   |
-├── controllers/
-│   ├── csvController.js
-|   |
-├── models/
-│   ├── csvModel.js
-|   |
+│   |            |-- file_viewer.js
+│---|config/
+|   |      |-- mongoose.js
+│---|controllers/
+|   |           |-- file_controller.js
+|   |           |-- home_controller.js
+|---|models/
+|   |      |-- csv.js
+│---|routers/
+|   |       |-- index.js
+|---|uploads/
+│   |       |-- files/
+|---|views/
+│   |     |-- file_viewer.ejs
+|   |     |-- home.ejs
+|   |     |-- layout.ejs
+|---| index.js
 ├── .gitignore
 ├── package.json
 ├── README.md
