@@ -25,31 +25,5 @@ CSV_Upload provides a simple API for uploading and parsing CSV files. The API su
 
 POST /upload: Uploads a CSV file and parses the data.
 GET /data: Returns the parsed CSV data as JSON.
-Folder Structure
-CSV_Upload/
-|---|assets/
-│   |      |---css/
-│   │      |     |-- file_viewer.css
-|   |      |     |-- header.css
-|   |      |     |-- home.css
-│   |      ├── js/
-│   |            |-- file_viewer.js
-│---|config/
-|   |      |-- mongoose.js
-│---|controllers/
-|   |           |-- file_controller.js
-|   |           |-- home_controller.js
-|---|models/
-|   |      |-- csv.js
-│---|routers/
-|   |       |-- index.js
-|---|uploads/
-│   |       |-- files/
-|---|views/
-│   |     |-- file_viewer.ejs
-|   |     |-- home.ejs
-|   |     |-- layout.ejs
-|---| index.js
-├── .gitignore
-├── package.json
-├── README.md
+
+Hosted Link: https://csv-upload-lr7u.onrender.com
