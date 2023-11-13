@@ -1,12 +1,14 @@
-console.log('Im in');
-
-
+// bind event linstner to search button
 document.getElementById("go").addEventListener("click", searchTable);
 
 function searchTable() {
   // Get the input value and convert it to lowercase
   const input = document.getElementById("search-input").value.toLowerCase();
   console.log(input);
+
+  if(input===""){
+    return;
+  }
   
   // Get all table rows and iterate through them
   const rows = document.getElementsByTagName("tr");
@@ -29,7 +31,11 @@ function searchTable() {
       
      
     } else {
-      rows[i].classList.remove("highlight");
+      if(i>0){
+        rows[i].classList.remove("highlight");
+        rows[i].style.display="none";
+      }
+     
     }
   }
 
