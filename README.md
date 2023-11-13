@@ -8,13 +8,18 @@ To install CSV_Upload, please follow these steps:
 
 Clone this repository using the following command:
 
+$https://github.com/Sachinsb18/csv-upload.git
+
 $ git clone 
+
 Install the required dependencies using the following command:
 
-$ npm install 
+$ npm install
+
 Start the application using the following command:
 
 $ node index.js 
+
 Open the application in your web browser by visiting the following URL:
 
 $ http://localhost:8000 
